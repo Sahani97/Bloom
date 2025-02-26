@@ -1,0 +1,139 @@
+main{
+    background-image: url("../assets/images/background.plants.png");
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.info-box {
+    width: 30%;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-text {
+    background-color: #dbe3cb; 
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.title-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.title-shadow {
+    background-color: #5a6d50;
+    width: 60%;
+    height: 45px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    z-index: 0;
+}
+
+.title-container:hover .title-shadow {
+    opacity: 1; 
+}
+
+.title-container:hover .title-bar {
+    transform: translateY(-2px);
+}
+
+
+.title-bar {
+    background-color: #9db187;
+    width: 60%;
+    height: 45px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.detail-view {
+    display: none;
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.detailed-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.detailed-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dbe3cb;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.text-box {
+    width: 60%;
+}
+
+.plant-img-vertical {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.plant-img-horizontal {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 5px 8px 5px 8px;
+    border: none;
+    background-color: rgb(90, 109, 80);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button:hover {
+    background-color: #75886b;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    position: relative;    
+    transform: translateY(-2px);
+}
+

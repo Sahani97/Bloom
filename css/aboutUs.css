@@ -1,0 +1,30 @@
+#aboutUs-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+#info-container{
+    width: 50%;
+}
+
+#slogan-container{
+    width: 80%;
+}
+
+#statement-img{
+    height: 600px;
+    border-radius: 0%;
+}
+
+#vsimage{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+

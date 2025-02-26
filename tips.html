@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Bloom</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/tips.css" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=account_circle" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
+
+    <script src="js/profile.js" defer></script>
+    <script src="js/tips.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html"><img src="assets/images/logo.png" id="logo-bloom" alt="Logo of the website saying Bloom"></a>         
+
+    </header>
+
+    <nav>
+        <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dot">•</li>
+            <li><a class="current" href="tips.html">Tips</a></li>
+            <li class="dot">•</li>
+            <li><a href="shop.html">Shop</a></li>
+            <li class="dot">•</li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dot">•</li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+        <div id="cart">
+            <a href="cart.html"><img src="assets/images/cart.png" alt="Cart" id="cart-img"></a>  
+        </div>
+    </nav>
+
+
+    
+    <main>
+        
+        <div class="header-container">
+            <div class="shadow"></div>
+            <div class="title">
+                <h1>Plant Tips</h1>
+            </div>
+        </div>
+
+        <div class="info-container" id="info-container">
+            <!-- Box 1 -->
+            <div class="info-box">
+                <div class="info-text">
+                    <p>Starting with houseplants can be intimidating, but not all plants require a green thumb. 
+                        For beginners, there are plenty of hardy, low-maintenance options that thrive with minimal care. 
+                        These plants tolerate irregular watering, less-than-ideal lighting, and the occasional forgotten routine.</p>
+                </div>
+                <div class="title-container" onclick="showDetails('beginners')">
+                    <div class="title-shadow"></div>
+                    <div class="title-bar">Easy to Maintain Plants for Beginners</div>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="info-box">
+                <div class="info-text">
+                    <p>Fresh flowers can brighten any space, but some blooms fade faster than others. 
+                        To keep your home vibrant and lively for longer, choose flowers with an extended lifespan. 
+                        From the timeless beauty of Orchids to cheerful Gerbera Daisies, these flowers are known for their staying power.</p>
+                </div>
+                <div class="title-container" onclick="showDetails('longlasting')">
+                    <div class="title-shadow"></div>
+                    <div class="title-bar">Flowers That Last Long</div>
+                </div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="info-box">
+                <div class="info-text">
+                    <p>Not all homes are blessed with bright, sunlit windows – but that doesn’t mean you can’t enjoy the beauty of indoor plants. 
+                        Some plants thrive in low-light conditions, making them ideal for apartments, offices, or spaces with limited natural sunlight.</p>
+                </div>
+                <div class="title-container" onclick="showDetails('lowlight')">
+                    <div class="title-shadow"></div>
+                    <div class="title-bar">Plants for Apartments with Low Sunlight</div>
+                </div>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="info-box">
+                <div class="info-text">
+                    <p>For plant lovers with busy schedules (or the occasional forgetful streak), drought-tolerant plants are lifesavers. 
+                        These low-water plants thrive in dry soil and can go weeks without watering. 
+                        Cacti, succulents, and hardy plants like the Snake Plant store water in their leaves.</p>
+                </div>
+                <div class="title-container" onclick="showDetails('droughtresistant')">
+                    <div class="title-shadow"></div>
+                    <div class="title-bar">Plants That Don’t Need To Be Watered Often</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detail View (Hidden initially) -->
+        <div class="detail-view" id="detail-view">
+            <div id="detail-title"></div>
+            <div id="detail-content"></div>
+            <div class="back-button-container">
+                <button class="back-button" onclick="goBack()">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+            </div>            
+        </div>
+
+        
+        
+    </main>
+
+    <footer>
+        © 2025 Bloom. All rights reserved.
+    </footer>
+
+</body>
+</html>

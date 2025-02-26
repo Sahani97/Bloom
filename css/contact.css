@@ -1,0 +1,86 @@
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+form {
+    float: right;
+    width: 400px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+input, textarea {
+    font-family: lexend;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+textarea {
+    height: 150px;
+}
+
+.submitButton {
+    font-family: lexend;
+    width: 422px;
+    margin-top: 20px;
+    padding: 5px 8px 5px 8px;
+    border: none;
+    background-color: #5a6d50;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitButton-container:hover .submitButton {
+    transform: translateY(-2px);
+}
+
+.submitButton:hover {
+    background-color: #75886b;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    position: relative;    
+}
+
+#contact-img {
+    width: 350px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+table {
+    width: 25%;
+    height: fixed;
+}
+
+table th{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+#question {
+    vertical-align:top;
+}
+
+.days {
+    width: 15%;
+}
